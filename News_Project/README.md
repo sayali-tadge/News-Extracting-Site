@@ -1,9 +1,9 @@
-1.Installation
+<h1>1.Installation</h1>
         Clone the repository to your local machine:
         git clone https://github.com/sayali-tadge/News-Extracting-Site.git
 
 
-2.Setup for project:
+<h1>2.Setup for project:</h1>
         
         step 1: activate virtual environment 
                 for windows : .\venv\Scripts\activate
@@ -16,7 +16,7 @@
                 run command: python manage.py migrate
                 run command : python manage.py renserver
 
-3. Usage
+<h1>3. Usage</h1>
 
    1) Sign up as a new user or log in if you have an existing account.
    2) Use the search bar to search for news articles by keywords.
@@ -24,7 +24,7 @@
    4) View your search history to revisit previous searches.
    5) Administrators can access the admin dashboard at http://localhost:8000/admin/ to manage            users.
 
-4. Estimated Development Time:
+<h1>4. Estimated Development Time:</h1>
         I spent approximately 23-24 hours building this project.
 
 <h1>5. Experience: </h1>
