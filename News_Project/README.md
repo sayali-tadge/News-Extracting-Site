@@ -27,6 +27,6 @@
 4. Estimated Development Time:
         I spent approximately 23-24 hours building this project.
 
-5. Experience: 
+<h1>5. Experience: </h1>
 
-        Working on this project was a valuable learning experience. I gained proficiency in Django, ORM, integrating external APIs, user authentication, and frontend development. The project allowed me to apply my skills to create a functional and user-friendly news aggregator application. I encountered and solved various challenges along the way, enhancing my problem-solving abilities. Overall, it was a rewarding project that improved my web development skills.
+Working on this project was a valuable learning experience. I gained proficiency in Django, ORM, integrating external APIs, user authentication, and frontend development. The project allowed me to apply my skills to create a functional and user-friendly news aggregator application. I encountered and solved various challenges along the way, enhancing my problem-solving abilities. Overall, it was a rewarding project that improved my web development skills.
