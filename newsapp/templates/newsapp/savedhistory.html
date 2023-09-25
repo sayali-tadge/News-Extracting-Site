@@ -1,0 +1,27 @@
+{% extends "newsapp/base.html" %}
+
+
+{% block content %}
+{% comment %} <div class="row"> {% endcomment %}
+    {% for i in result %}
+    <a>{{ i.result }}</a>
+      
+        {% comment %} <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img src={{i.urlToImage}} class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">{{i.title}}</h5>
+                <br>
+                <h5 class="card-title">{{i.source.name}}</h5>
+                <p>date: {{i.publishedAt}}</p>
+                <p class="card-text">{{i.description}}</p>
+                <a href={{i.result}} class="btn btn-primary" target = "_blank">View Full News</a>
+                </div>
+            </div>
+        </div> {% endcomment %}
+
+        
+      
+    {% endfor %}
+  </div>
+{% endblock content  %} 

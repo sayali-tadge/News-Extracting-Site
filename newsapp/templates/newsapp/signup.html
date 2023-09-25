@@ -1,0 +1,14 @@
+{% extends "newsapp/base.html" %}
+
+{% block content %}
+
+    <h1>Register</h1>
+<br/>
+    <form action = {% url 'Signup' %} method=POST>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <br/><br/>
+        <input type="submit" value="Submit" class = "btn btn-secondary">
+    </form>
+
+{% endblock content %}
