@@ -6,6 +6,7 @@ from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.db.models import Count
+
 import requests
 
 from .models import History, UserInfo , is_admin
@@ -29,6 +30,7 @@ def HomeView(request):
 
 @login_required(login_url='/login/')
 def SearchView(request):
+    """search view will get keyword as a search name and new page will show news according to keyword entered."""
     keyword = request.GET['Search']
     language = request.GET['Language']
     country = request.GET['Country']
@@ -158,6 +160,9 @@ def LogoutView(request):
 
 @user_passes_test(is_admin)
 def dashboard(request):
+    """
+        only admin can access dashboard section. Most searched keywords will be displayed on dashboard with their count.
+    """
     trending_keyword = History.objects.values('keyword').annotate(search_count = Count('keyword')).order_by('-search_count')[:15]
     context ={'trending_keyword' : trending_keyword}
     return render(request, 'newsapp/dashboard.html', context)
